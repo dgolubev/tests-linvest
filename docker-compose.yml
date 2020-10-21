@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  php:
+    build: docker/php
+    working_dir: /app
+    volumes:
+    - ./:/app
+    - ./vendor:/app/vendor

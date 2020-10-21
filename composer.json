@@ -1,0 +1,29 @@
+{
+    "name": "deg/composer",
+    "authors": [
+        {
+            "name": "Dmitry Golubev",
+            "email": "d.e.golubev@gmaiul.com"
+        }
+    ],
+    "scripts": {
+        "behat-test": "vendor/bin/behat",
+        "unit-test": "vendor/bin/phpunit"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4",
+        "behat/behat": "^3.7"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Deg\\Linvest\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Deg\\Linvest\\UTests\\": "tests/unit/",
+            "Deg\\Linvest\\BTests\\": "tests/behat/"
+        }
+    }
+}

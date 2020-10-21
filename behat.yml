@@ -1,0 +1,19 @@
+
+default:
+
+  autoload:
+    '': "%paths.base%/tests/behat/Context/"
+
+  formatters:
+    pretty: true
+
+  suites:
+    default:
+      paths:
+        - "%paths.base%/tests/behat/features"
+      contexts:
+        - Deg\Linvest\BTests\Bootstrap\FeatureContext
+        - Deg\Linvest\BTests\Bootstrap\InvestorContext
+        - Deg\Linvest\BTests\Bootstrap\LoanContext
+        - Deg\Linvest\BTests\Bootstrap\InterestContext
+
